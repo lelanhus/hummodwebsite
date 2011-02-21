@@ -1,0 +1,12 @@
+#header, #main, #footer {
+  @extend .row;
+}
+
+#leftNav, #content {
+  @extend .column;
+}
+
+#leftNav {
+  @extend .grid_3;
+  margin-left: 0px;
+}
