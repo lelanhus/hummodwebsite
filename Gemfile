@@ -7,6 +7,7 @@ gem 'rails_admin'
 gem 'inherited_resources'
 gem 'haml'
 gem 'paperclip'
+gem 'jquery-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
