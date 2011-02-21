@@ -2,10 +2,12 @@ class CreateDownloads < ActiveRecord::Migration
   def self.up
     create_table :downloads do |t|
       t.string :name
-      t.reference :category_id
+      t.integer :category_id
 
       t.timestamps
     end
+    
+    add_index :downloads, :category_id
   end
 
   def self.down

@@ -1,1 +1,4 @@
 %h1 Listing all downloads
+
+- @downloads.each do |download|
+  %p= link_to(download.name, download_url(download))
