@@ -2,6 +2,12 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.4'
 
+gem 'devise'
+gem 'rails_admin'
+gem 'inherited_resources'
+gem 'haml'
+gem 'paperclip'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
