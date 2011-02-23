@@ -1,12 +1,32 @@
+/* Layout */
+
 #header, #main, #footer {
   @extend .row;
 }
 
-#leftNav, #content {
-  @extend .column;
-}
-
-#leftNav {
-  @extend .grid_3;
-  margin-left: 0px;
+#header {
+  #top {
+    @extend .row;
+    h1 {
+      @extend .column;
+      @extend .grid_2;
+      a {
+        padding: 1em;
+      }
+    }
+    nav {
+      @extend h3;
+      @extend .column;
+      @extend .grid_9;
+      margin-left: 70px;
+      margin-top: 1em;
+      li {
+        display: inline;
+        margin-right: 1em;
+        a {
+          margin-right: 1em;
+        }
+      }
+    }
+  }
 }

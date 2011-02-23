@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, #header #top nav, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -52,10 +52,10 @@ table {
 .grid_1 {
   width: 60px; }
 
-.grid_2 {
+.grid_2, #header #top h1 {
   width: 140px; }
 
-.grid_3, #leftNav {
+.grid_3 {
   width: 220px; }
 
 .grid_4 {
@@ -73,7 +73,7 @@ table {
 .grid_8 {
   width: 620px; }
 
-.grid_9 {
+.grid_9, #header #top nav {
   width: 700px; }
 
 .grid_10 {
@@ -85,17 +85,17 @@ table {
 .grid_12 {
   width: 940px; }
 
-.column, #leftNav, #content {
+.column, #header #top h1, #header #top nav {
   margin: 0 10px;
   overflow: hidden;
   float: left;
   display: inline; }
 
-.row, #header, #main, #footer {
+.row, #header, #main, #footer, #header #top {
   width: 960px;
   margin: 0 auto;
   overflow: hidden; }
-  .row .row, #header .row, #main .row, #footer .row, .row #header, #header #header, #main #header, #footer #header, .row #main, #header #main, #main #main, #footer #main, .row #footer, #header #footer, #main #footer, #footer #footer {
+  .row .row, #header .row, #main .row, #footer .row, #header #top .row, .row #header, #header #header, #main #header, #footer #header, #header #top #header, .row #main, #header #main, #main #main, #footer #main, #header #top #main, .row #footer, #header #footer, #main #footer, #footer #footer, #header #top #footer, .row #header #top, #header .row #top, #header #top, #main #header #top, #header #main #top, #footer #header #top, #header #footer #top, #header #top #top {
     margin: 0 -10px;
     width: auto;
     display: inline-block; }
@@ -118,7 +118,7 @@ h2 {
   line-height: 1.1em;
   margin-bottom: 1.1em; }
 
-h3 {
+h3, #header #top nav {
   margin: 0;
   font-size: 1.2857142857142858em;
   line-height: 1.2222222222222223em;
@@ -146,7 +146,48 @@ table {
   border-collapse: collapse;
   margin-bottom: 1.5714285714285714em; }
 
-#leftNav {
-  margin-left: 0px; }
+/* Layout */
+#header #top h1 a {
+  padding: 1em; }
+#header #top nav {
+  margin-left: 70px;
+  margin-top: 1em; }
+  #header #top nav li {
+    display: inline;
+    margin-right: 1em; }
+    #header #top nav li a {
+      margin-right: 1em; }
 
-/* DO NOT place font sizes in here.  They are defined in the baseline file. */
+/* Typography */
+body {
+  font-family: Helvetica, Arial, san-serif; }
+
+#bar {
+  background: #94aa62;
+  height: 5px; }
+
+#header {
+  color: #bdbdbd;
+  margin-top: 1em; }
+  #header h1 {
+    text-align: center; }
+    #header h1 a {
+      background: #d2dfb3;
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      text-decoration: none; }
+  #header nav a {
+    color: #94aa62;
+    text-decoration: none; }
+  #header nav a:hover {
+    text-decoration: underline; }
+  #header h2 {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5em;
+    padding: 1em;
+    text-align: justify; }
+
+#footer {
+  text-align: center; }

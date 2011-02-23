@@ -6,26 +6,26 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
-    %div#header
-      %h1#topText a better understanding of the human body; a mathematical model of integrated human physiology; a framework for developing models and expanding current modeling practices.
+    #bar
+    %header#header
+      #top
+        %h1= link_to "HumMod", root_url
+        %nav
+          %ul
+            %li.first
+              = link_to "About", "#"
+              \/
+            %li
+              = link_to "Projects", "#"
+              \/
+            %li
+              = link_to "Help", "#"
+              \/
+            %li.last= link_to "Contact"
+      %h2 a better understanding of the human body; a mathematical model of integrated human physiology; a framework for developing models and expanding current modeling practices.
+
+    %article#main= yield
     
-    %div#main  
-      %ul#leftNav.nav
-        %li 
-          %h4= link_to 'About Us', "#"
-          %h4 Find out who we are
-        %li
-          %h4= link_to 'Projects', "#"
-          %h5 Download current projects
-        %li
-          %h4= link_to 'Help', "#"
-          %h5 Find more help
-        %li
-          %h4= link_to 'Contact Us', "#"
-          %h5 Get in touch
-      %div#content
-        = yield
-    
-    %div#footer
+    %footer#footer
       %h6 &#169;2010 - The University of Mississippi Medical Center
       %h6 Supported by: NSF EPSCOR, NASA, and NIH

@@ -1,1 +1,46 @@
-/* DO NOT place font sizes in here.  They are defined in the baseline file. */
+/* Typography */
+
+body {
+  font-family: Helvetica, Arial, san-serif;
+}
+
+#bar {
+  background: #94aa62;
+  height: 5px;
+}
+
+#header {
+  color: #bdbdbd;
+  margin-top: 1em;
+  h1 {
+    text-align: center;
+    a {
+      background: #d2dfb3;
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  nav {
+    a {
+      color: #94aa62;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  h2 {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5em;
+    padding: 1em;
+    text-align: justify;
+  }
+}
+
+
+#footer {
+  text-align: center;
+}
