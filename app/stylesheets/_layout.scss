@@ -30,3 +30,23 @@
     }
   }
 }
+
+section.home_download {
+  @extend .row;
+  header {
+    @extend .column;
+    @extend .grid_4;
+  }
+  p {
+    @extend .column;
+    @extend .grid_6;
+  }
+  a.download_link {
+    @extend .column;
+    @extend .grid_2;
+  }
+}
+
+#footer {
+  padding-top: 1em;
+}

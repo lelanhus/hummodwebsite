@@ -1,8 +1,12 @@
 Hummod::Application.routes.draw do
+
+  resources :downloads do
+    get 'download_the', :on => :member
+  end
   
-  resources :downloads
+  match '/:name' => 'pages#view', :as => :view_page
   
-  root :to => "downloads#index"
+  root :to => "pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

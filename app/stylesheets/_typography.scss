@@ -1,7 +1,12 @@
 /* Typography */
 
 body {
+  color: #666;
   font-family: Helvetica, Arial, san-serif;
+}
+
+a {
+  color: #6295ec;
 }
 
 #bar {
@@ -42,5 +47,6 @@ body {
 
 
 #footer {
+  border-top: 1px solid #eee;
   text-align: center;
 }
