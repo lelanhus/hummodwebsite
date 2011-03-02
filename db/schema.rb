@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110302172924) do
+ActiveRecord::Schema.define(:version => 20110302175237) do
 
   create_table "downloads", :force => true do |t|
     t.string   "name"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20110302172924) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "package"
+    t.text     "description"
   end
 
   add_index "downloads", ["category_id"], :name => "index_downloads_on_category_id"

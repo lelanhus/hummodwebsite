@@ -1,0 +1,7 @@
+- @downloads.each do |download|
+  %section.home_download
+    %header
+      %h1= link_to download.name, download_path(download)
+    %p
+    = download.description
+    = link_to "Download", package_download_path(download), :class => :download_link

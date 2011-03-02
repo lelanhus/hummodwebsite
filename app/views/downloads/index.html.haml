@@ -1,4 +1,4 @@
-%h1 Listing all downloads
+- content_for :header do
+  Downloads
 
-- @downloads.each do |download|
-  %p= link_to(download.name, download_url(download))
+= render 'downloads'

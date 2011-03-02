@@ -16,7 +16,7 @@
               = link_to "About", "#"
               \/
             %li
-              = link_to "Projects", "#"
+              = link_to "Projects", downloads_path
               \/
             %li
               = link_to "Help", "#"
@@ -24,7 +24,9 @@
             %li.last= link_to "Contact"
       %h2= yield(:header)
 
-    %article#main= yield
+    %article#main
+      = yield
+      = yield(:sidebar)
     
     %footer#footer
       %h6 &#169;2010 - The University of Mississippi Medical Center

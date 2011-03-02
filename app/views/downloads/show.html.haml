@@ -3,4 +3,7 @@
   &gt;
   =@download.name
   
-%p= link_to "Download", package_download_path(@download)
+%p= @download.description
+
+- content_for :sidebar do 
+  = link_to "Download", package_download_path(@download), :class => :download_link
