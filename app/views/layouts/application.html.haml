@@ -22,7 +22,7 @@
               = link_to "Help", "#"
               \/
             %li.last= link_to "Contact"
-      %h2 a better understanding of the human body; a mathematical model of integrated human physiology; a framework for developing models and expanding current modeling practices.
+      %h2= yield(:header)
 
     %article#main= yield
     

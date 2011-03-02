@@ -1,7 +1,7 @@
 Hummod::Application.routes.draw do
 
   resources :downloads do
-    get 'download_the', :on => :member
+    get 'package', :on => :member
   end
   
   match '/:name' => 'pages#view', :as => :view_page

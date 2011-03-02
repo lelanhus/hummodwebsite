@@ -1,0 +1,6 @@
+- content_for :header do
+  = link_to "Downloads", downloads_path
+  &gt;
+  =@download.name
+  
+%p= link_to "Download", package_download_path(@download)

@@ -31,6 +31,8 @@ GEM
     arel (2.0.8)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
+    carrierwave (0.5.2)
+      activesupport (~> 3.0)
     devise (1.1.7)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 1.0.2)
@@ -51,9 +53,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    paperclip (2.3.8)
-      activerecord
-      activesupport
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -88,11 +87,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  carrierwave
   devise
   haml
   inherited_resources
   jquery-rails
-  paperclip
   rails (= 3.0.4)
   rails_admin
   sqlite3

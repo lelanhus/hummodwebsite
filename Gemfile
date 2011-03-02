@@ -6,7 +6,7 @@ gem 'devise'
 gem 'rails_admin'
 gem 'inherited_resources'
 gem 'haml'
-gem 'paperclip'
+gem 'carrierwave'
 gem 'jquery-rails'
 
 # Bundle edge Rails instead:
