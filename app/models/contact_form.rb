@@ -1,4 +1,4 @@
-class ContactForm < ActiveRecord::Base
+class ContactForm < MailForm::Base
   attribute :name,      :validate => true
   attribute :email,     :validate => /[^@]+@[^\.]+\.[\w\.\-]+/
   attribute :subject,   :validate => true
@@ -8,7 +8,7 @@ class ContactForm < ActiveRecord::Base
   def headers
     {
       :subject => "HumMod Contact Form: #{subject}",
-      :from => "contact@hummod.com"
+      :to => "contact@hummod.com",
       :from => %("#{name}" <#{email}>)
     }
   end
