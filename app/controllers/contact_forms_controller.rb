@@ -1,5 +1,10 @@
 class ContactFormsController < InheritedResources::Base
   actions :new, :create
+
+  def new
+    @contact_form = ContactForm.new
+    render(:layout => false) if request.xhr?
+  end
   
   def create
     @contact_form = ContactForm.new(params[:contact_form])
@@ -11,5 +16,4 @@ class ContactFormsController < InheritedResources::Base
       render :action => :new
     end
   end
-
 end

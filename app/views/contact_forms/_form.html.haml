@@ -1,11 +1,18 @@
 = form_for @contact_form do |f|
-  = f.label :name
-  = f.text_field :name
-  = f.label :email
-  = f.text_field :email
-  = f.label :subject
-  = f.text_field :subject
-  = f.label :message
-  = f.text_area :message
-  
-  = f.submit
+  %fieldset
+    %legend Contact Us
+    %p
+      = f.label :name
+      = f.text_field :name
+    %p
+      = f.label :email
+      = f.text_field :email
+    %p
+      = f.label :subject
+      = f.text_field :subject
+    %p
+      = f.label :message
+      %br
+      = f.text_area :message
+
+  %p= f.submit "Send Message"
