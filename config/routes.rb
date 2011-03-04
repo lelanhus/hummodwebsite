@@ -1,4 +1,8 @@
 Hummod::Application.routes.draw do
+  
+  match '/contact' => 'contact_forms#new', :as => :contact
+  
+  resources :contact_forms
 
   resources :downloads do
     get 'package', :on => :member

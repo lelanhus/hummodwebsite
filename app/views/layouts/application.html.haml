@@ -21,10 +21,11 @@
             %li
               = link_to "Help", "#"
               \/
-            %li.last= link_to "Contact"
+            %li.last= link_to "Contact", contact_path
       %h2= yield(:header)
 
     %article#main
+      %p#notice= notice
       = yield
       = yield(:sidebar)
     
