@@ -2,8 +2,8 @@
 %html
   %head
     %title HumMod
-    = stylesheet_link_tag "application"
-    = javascript_include_tag :defaults
+    = stylesheet_link_tag "application", "facebox"
+    = javascript_include_tag :defaults, "facebox"
     = csrf_meta_tag
   %body
     #bar
@@ -21,7 +21,7 @@
             %li
               = link_to "Help", "#"
               \/
-            %li.last= link_to "Contact", contact_path
+            %li.last= link_to "Contact", contact_path, :rel => :facebox
       %h2= yield(:header)
 
     %article#main

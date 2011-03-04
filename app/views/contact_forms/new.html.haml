@@ -1,11 +1,4 @@
-= form_for @contact_form do |f|
-  = f.label :name
-  = f.text_field :name
-  = f.label :email
-  = f.text_field :email
-  = f.label :subject
-  = f.text_field :subject
-  = f.label :message
-  = f.text_area :message
+= render 'form'
   
-  = f.submit
+-# TODO
+-# Make this a lightbox for users with javascript.
