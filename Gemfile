@@ -10,6 +10,10 @@ gem 'haml-rails'
 gem 'carrierwave'
 gem 'jquery-rails'
 gem 'mail_form'
+group :development do
+  gem 'hpricot'
+  gem 'ruby_parser'
+end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
