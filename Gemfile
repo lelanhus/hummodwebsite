@@ -11,6 +11,8 @@ gem 'carrierwave'
 gem 'jquery-rails'
 gem 'mail_form'
 gem 'delayed_job'
+gem 'capistrano'
+gem 'rack-rewrite'
 
 
 group :development do

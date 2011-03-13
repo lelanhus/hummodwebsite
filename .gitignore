@@ -6,3 +6,4 @@ config/database.yml
 config/initializers/setup_mail.rb
 .sass-cache/
 public/uploads
+config/deploy.rb
