@@ -13,13 +13,13 @@
         %nav
           %ul
             %li.first
-              = link_to "About", "#"
+              = link_to "About", view_page_path('about')
               \/
             %li
               = link_to "Projects", downloads_path
               \/
             %li
-              = link_to "Help", "#"
+              = link_to "Help", view_page_path('help')
               \/
             %li.last= link_to "Contact", contact_path, :rel => :facebox, :id => :contact_form
       %h2= yield(:header)
