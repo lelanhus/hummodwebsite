@@ -1,4 +1,5 @@
 class DownloadsController < InheritedResources::Base
+  before_filter :authenticate_user!, :except => [:index, :show]
   
   def package
     @download = Download.find(params[:id])
@@ -11,4 +12,5 @@ class DownloadsController < InheritedResources::Base
       render(:action => :facebox, :layout => false)
     end
   end
+
 end

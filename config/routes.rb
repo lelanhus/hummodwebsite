@@ -1,5 +1,7 @@
 Hummod::Application.routes.draw do
   
+  devise_for :users
+
   match '/contact' => 'contact_forms#new', :as => :contact
   
   resources :contact_forms
