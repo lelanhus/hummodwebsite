@@ -4,4 +4,11 @@ class DownloadsController < InheritedResources::Base
     @download = Download.find(params[:id])
     send_file(@download.package.current_path)
   end
+  
+  def show
+    @download = Download.find(params[:id])
+    if request.xhr?
+      render(:action => :facebox, :layout => false)
+    end
+  end
 end

@@ -1,0 +1,5 @@
+%h1= @download.name
+
+%p= @download.description
+
+= link_to "Download", package_download_path(@download), :class => :download_link

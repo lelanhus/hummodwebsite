@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
-    @modeler    = Category.modelers.first
-    @navigator  = Category.navigators.first
+    @modeler    = Category.where(:name => "Modeler").first.downloads.first
+    @navigator  = Category.where(:name => "Navigator").first.downloads.first
   end
   
   def view
