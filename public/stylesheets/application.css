@@ -163,6 +163,10 @@ section.project header {
 section.project p {
   margin: 0 auto; }
 
+section.home_download {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 1em; }
+
 form#new_contact_form legend, form#new_contact_form div {
   margin-bottom: 1em; }
 form#new_contact_form .fields input, form#new_contact_form .fields textarea {
@@ -208,6 +212,8 @@ a {
     padding: 1em 0em;
     text-align: justify; }
 
+section.project a:hover img {
+  border: 14px solid #6295ec; }
 section.project img {
   border: 14px solid #a5a5a5; }
 section.project p {
@@ -220,6 +226,14 @@ form#new_contact_form legend {
 form#new_contact_form input, form#new_contact_form textarea {
   font-size: 1.25em;
   padding: 4px; }
+
+a.download_link {
+  font-size: 1.25em;
+  padding: 0em 1em; }
+
+a.download_link:hover {
+  color: #a5a5a5;
+  background: #6295ec; }
 
 #footer {
   border-top: 1px solid #eee;

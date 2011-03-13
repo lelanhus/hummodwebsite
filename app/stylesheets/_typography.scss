@@ -46,6 +46,11 @@ a {
 }
 
 section.project {
+  a:hover {
+    img {
+      border: 14px solid #6295ec;
+    }
+  }
   img {
     border: 14px solid #a5a5a5;
   }
@@ -64,6 +69,16 @@ form#new_contact_form {
     font-size: 1.25em;
     padding: 4px;
   }
+}
+
+a.download_link {
+  font-size: 1.25em;
+  padding: 0em 1em;
+}
+
+a.download_link:hover {
+  color: #a5a5a5;
+  background: #6295ec;
 }
 
 #footer {
