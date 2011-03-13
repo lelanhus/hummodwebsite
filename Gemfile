@@ -10,6 +10,9 @@ gem 'haml-rails'
 gem 'carrierwave'
 gem 'jquery-rails'
 gem 'mail_form'
+gem 'delayed_job'
+
+
 group :development do
   gem 'hpricot'
   gem 'ruby_parser'

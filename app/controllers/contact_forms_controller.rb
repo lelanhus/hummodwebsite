@@ -8,8 +8,8 @@ class ContactFormsController < InheritedResources::Base
   
   def create
     @contact_form = ContactForm.new(params[:contact_form])
-    if @contact_form.deliver
-      flash[:notice] = "Message sent."
+    if @contact_form.send_later(:deliver)
+      flash[:notice] = "Message is being sent."
       redirect_to root_url
     else
       flash[:error] = "Something went wrong."
