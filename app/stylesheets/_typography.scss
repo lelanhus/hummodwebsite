@@ -45,6 +45,16 @@ a {
   }
 }
 
+form#new_contact_form {
+  legend {
+    background: #d2dfb3;
+    padding: 0.5em;
+  }
+  input, textarea {
+    font-size: 1.25em;
+    padding: 4px;
+  }
+}
 
 #footer {
   border-top: 1px solid #eee;

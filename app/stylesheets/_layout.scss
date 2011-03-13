@@ -31,19 +31,29 @@
   }
 }
 
-section.home_download {
-  @extend .row;
+section.project {
+  @extend .column;
+  @extend .grid_6;
   header {
-    @extend .column;
-    @extend .grid_4;
+    display: none;
   }
   p {
-    @extend .column;
-    @extend .grid_6;
+    @extend .grid_4;
+    margin: 0 auto;
   }
-  a.download_link {
-    @extend .column;
-    @extend .grid_2;
+}
+
+form#new_contact_form {
+  legend, div {
+    margin-bottom: 1em;
+  }
+  .fields {
+    input, textarea {
+      width: 430px;
+    }
+    textarea {
+      height: 250px;
+    }
   }
 }
 

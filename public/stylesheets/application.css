@@ -52,19 +52,19 @@ table {
 .grid_1 {
   width: 60px; }
 
-.grid_2, #header #top h1, section.home_download a.download_link {
+.grid_2, #header #top h1 {
   width: 140px; }
 
 .grid_3 {
   width: 220px; }
 
-.grid_4, section.home_download header {
+.grid_4, section.project p {
   width: 300px; }
 
 .grid_5 {
   width: 380px; }
 
-.grid_6, section.home_download p {
+.grid_6, section.project {
   width: 460px; }
 
 .grid_7 {
@@ -85,17 +85,17 @@ table {
 .grid_12 {
   width: 940px; }
 
-.column, #header #top h1, #header #top nav, section.home_download header, section.home_download p, section.home_download a.download_link {
+.column, #header #top h1, #header #top nav, section.project {
   margin: 0 10px;
   overflow: hidden;
   float: left;
   display: inline; }
 
-.row, #header, #main, #footer, #header #top, section.home_download {
+.row, #header, #main, #footer, #header #top {
   width: 960px;
   margin: 0 auto;
   overflow: hidden; }
-  .row .row, #header .row, #main .row, #footer .row, #header #top .row, section.home_download .row, .row #header, #header #header, #main #header, #footer #header, #header #top #header, section.home_download #header, .row #main, #header #main, #main #main, #footer #main, #header #top #main, section.home_download #main, .row #footer, #header #footer, #main #footer, #footer #footer, #header #top #footer, section.home_download #footer, .row #header #top, #header .row #top, #header #top, #main #header #top, #header #main #top, #footer #header #top, #header #footer #top, #header #top #top, section.home_download #header #top, #header section.home_download #top, .row section.home_download, #header section.home_download, #main section.home_download, #footer section.home_download, #header #top section.home_download, section.home_download section.home_download {
+  .row .row, #header .row, #main .row, #footer .row, #header #top .row, .row #header, #header #header, #main #header, #footer #header, #header #top #header, .row #main, #header #main, #main #main, #footer #main, #header #top #main, .row #footer, #header #footer, #main #footer, #footer #footer, #header #top #footer, .row #header #top, #header .row #top, #header #top, #main #header #top, #header #main #top, #footer #header #top, #header #footer #top, #header #top #top {
     margin: 0 -10px;
     width: auto;
     display: inline-block; }
@@ -158,6 +158,18 @@ table {
     #header #top nav li a {
       margin-right: 1em; }
 
+section.project header {
+  display: none; }
+section.project p {
+  margin: 0 auto; }
+
+form#new_contact_form legend, form#new_contact_form div {
+  margin-bottom: 1em; }
+form#new_contact_form .fields input, form#new_contact_form .fields textarea {
+  width: 430px; }
+form#new_contact_form .fields textarea {
+  height: 250px; }
+
 #footer {
   padding-top: 1em; }
 
@@ -195,6 +207,13 @@ a {
     line-height: 1.5em;
     padding: 1em 0em;
     text-align: justify; }
+
+form#new_contact_form legend {
+  background: #d2dfb3;
+  padding: 0.5em; }
+form#new_contact_form input, form#new_contact_form textarea {
+  font-size: 1.25em;
+  padding: 4px; }
 
 #footer {
   border-top: 1px solid #eee;
