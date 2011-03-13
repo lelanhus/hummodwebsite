@@ -6,13 +6,13 @@ gem 'devise'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'inherited_resources'
 gem 'haml'
-gem 'haml-rails'
+#gem 'haml-rails'
 gem 'carrierwave'
 gem 'jquery-rails'
 gem 'mail_form'
 gem 'delayed_job'
-gem 'capistrano'
-gem 'rack-rewrite'
+#gem 'capistrano'
+#gem 'rack-rewrite'
 
 
 group :development do
