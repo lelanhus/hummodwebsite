@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+categories = Category.create([{:name => 'Modeler'}, {:name => 'Navigator'}, {:name => 'QCP'}])
