@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
-    @downloads = Download.all
+    @modeler    = Category.modelers.first
+    @navigator  = Category.navigators.first
   end
   
   def view
