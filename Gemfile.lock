@@ -9,6 +9,7 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    RedCloth (4.2.7)
     abstract (1.0.0)
     actionmailer (3.0.4)
       actionpack (= 3.0.4)
@@ -88,6 +89,7 @@ GEM
       thor (~> 0.14.4)
     rake (0.8.7)
     responders (0.6.2)
+    rmagick (2.13.1)
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
     sexp_processor (3.0.5)
@@ -103,6 +105,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  RedCloth
   carrierwave
   delayed_job
   devise
@@ -113,5 +116,6 @@ DEPENDENCIES
   mail_form
   rails (= 3.0.4)
   rails_admin!
+  rmagick
   ruby_parser
   sqlite3

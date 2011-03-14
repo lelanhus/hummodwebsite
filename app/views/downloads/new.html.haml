@@ -1,12 +1,1 @@
-=form_for @download, :html => {:multipart => true} do |f|
-  %p
-    =f.label :name
-    =f.text_field :name
-    
-  %p
-    =f.label :description
-    =f.text_area :description
-    
-  %p=f.file_field :package
-    
-  %p=f.submit
+= render 'form'

@@ -7,15 +7,17 @@
       = f.label :published
       = f.submit
   
-= @document.body
+= raw RedCloth.new(@document.body, [:filter_html]).to_html
 
-= edit_document_link(@document)
+= link_to "Edit Document Body", edit_document_path(@document) if current_user_is_author?
 
 - @document.sections.each do |section|
   %section
     %header
       %h1= section.title
+      = link_to "Edit Section", edit_document_section_path(@document, section) if current_user_is_author?
     
     = section.body
+    = image_tag section.section_image_url if section.section_image?
     
-= link_to "Add a section", new_document_section_path(@document)
+= link_to "Add a section", new_document_section_path(@document) if current_user_is_author?

@@ -13,6 +13,8 @@ gem 'mail_form'
 gem 'delayed_job'
 #gem 'capistrano'
 #gem 'rack-rewrite'
+gem 'RedCloth'
+gem 'rmagick'
 
 
 group :development do

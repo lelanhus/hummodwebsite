@@ -5,6 +5,9 @@
     %legend Basic Info
     
     .field
+      = f.collection_select :category_id, Category.all, :id, :name, :prompt => "Select a category."
+    
+    .field
       = f.label :title
       = f.text_field :title
       

@@ -1,4 +1,5 @@
 class Section < ActiveRecord::Base
+  mount_uploader :section_image, SectionImageUploader
   
   belongs_to :document
   

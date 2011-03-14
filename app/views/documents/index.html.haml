@@ -1,0 +1,8 @@
+- content_for :header do
+  Documents
+  
+%ul
+  - @documents.each do |doc|
+    %li
+      = link_to doc.title, doc
+  %li= link_to "New Document", new_document_path

@@ -1,4 +1,4 @@
-= form_for([@document, @section]) do |f|
+= form_for([@document, @section], :html => {:multipart => true}) do |f|
   = render 'shared/error_messages', :target => @section
   
   %fieldset
@@ -11,5 +11,15 @@
       = f.label :body
       %br
       = f.text_area :body
+      
+  %fieldset
+    %legend Image
+    .field
+      = f.file_field :section_image
+      = f.hidden_field :section_image_cache
+      
+    .field
+      = f.check_box :remove_section_image
+      = f.label :remove_section_image
     
   %p= f.submit

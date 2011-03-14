@@ -1,0 +1,20 @@
+=form_for @download, :html => {:multipart => true} do |f|
+  %p
+    = f.label :name
+    = f.text_field :name
+    
+  %p
+    = f.collection_select :category_id, Category.all, :id, :name, :prompt => "Select a category."
+  %p
+    = f.label :description
+    = f.text_area :description
+    
+  %p
+    = f.file_field :package
+    = f.hidden_field :package_cache
+    
+  %p
+    = f.check_box :package
+    = f.label :package
+    
+  %p= f.submit
