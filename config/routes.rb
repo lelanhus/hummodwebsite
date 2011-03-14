@@ -1,5 +1,5 @@
 Hummod::Application.routes.draw do
-
+  
   match '/contact' => 'contact_forms#new', :as => :contact
   match '/about' => 'pages#about', :as => :about_page
   match 'help' => 'pages#help', :as => :help_page
@@ -8,6 +8,10 @@ Hummod::Application.routes.draw do
 
   resources :downloads do
     get 'package', :on => :member
+  end
+  
+  resources :documents do
+    resources :sections
   end
   
   devise_for :users, :controllers => { :registrations => "users/registrations"}

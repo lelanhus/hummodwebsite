@@ -1,0 +1,13 @@
+= form_for(@document) do |f|
+  = render 'shared/error_messages', :target => @user
+  
+  %fieldset
+    %legend Title
+    
+    .field
+      = f.label :title
+      = f.text_field :title
+      
+  
+  %p= f.submit
+      
