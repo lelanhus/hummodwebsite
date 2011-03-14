@@ -1,0 +1,21 @@
+- content_for :header do 
+  = @document.title
+  
+  - unless @document.published?
+    = form_for(@document) do |f|
+      = f.check_box :published
+      = f.label :published
+      = f.submit
+  
+= @document.body
+
+= edit_document_link(@document)
+
+- @document.sections.each do |section|
+  %section
+    %header
+      %h1= section.title
+    
+    = section.body
+    
+= link_to "Add a section", new_document_section_path(@document)

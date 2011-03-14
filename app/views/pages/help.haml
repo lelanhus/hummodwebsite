@@ -14,3 +14,12 @@
     %a{:href => "../help_documents/Model_Navigator_User_Manual-1.0-2003.pdf"} Model Navigator User Manual (2003)
   %li
     %a{:href => "../help_documents/schema.pdf"} The Schema
+    
+%article
+  %header
+    %h1
+      Help Documents
+      
+  %ul
+    - Document.all.each do |doc|
+      %li= link_to doc.title, doc

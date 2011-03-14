@@ -3,6 +3,7 @@ class Document < ActiveRecord::Base
   
   has_many :sections
   
-  validates :title, :user, :presence => true
+  validates :title, :body, :user, :presence => true
   validates :title, :uniqueness => true
+
 end
