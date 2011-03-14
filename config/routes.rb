@@ -14,6 +14,10 @@ Hummod::Application.routes.draw do
     resources :sections
   end
   
+  #resources :faq do
+  #  resources :answers
+  #end
+  
   devise_for :users, :controllers => { :registrations => "users/registrations"}
   
   root :to => "pages#home"

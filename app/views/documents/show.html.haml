@@ -1,23 +1,35 @@
 - content_for :header do 
   = @document.title
   
-  - unless @document.published?
+  = link_to "Edit Document Body", edit_document_path(@document), :class => :edit_link if user_signed_in?
+  
+  - unless @document.published? || !user_signed_in?
     = form_for(@document) do |f|
       = f.check_box :published
       = f.label :published
       = f.submit
-  
-= raw RedCloth.new(@document.body, [:filter_html]).to_html
 
-= link_to "Edit Document Body", edit_document_path(@document) if current_user_is_author?
+%section#document
+  %header.document
+    %h1= @document.title
+    
+  = textilize(@document.body)
 
-- @document.sections.each do |section|
-  %section
-    %header
-      %h1= section.title
-      = link_to "Edit Section", edit_document_section_path(@document, section) if current_user_is_author?
+
+  - @document.sections.each do |section|
+    %section.section
+      %header
+        %h1= section.title
+        = link_to "Edit Section", edit_document_section_path(@document, section) if user_signed_in?
     
-    = section.body
-    = image_tag section.section_image_url if section.section_image?
+      = textilize(section.body)
+      - if section.section_image?
+        .sectionImage
+          = image_tag section.section_image_url
+
+- content_for :sidebar do
+  %aside#doc_help
+    .content
+      = link_to "Add a section", new_document_section_path(@document) if user_signed_in?
+      
     
-= link_to "Add a section", new_document_section_path(@document) if current_user_is_author?

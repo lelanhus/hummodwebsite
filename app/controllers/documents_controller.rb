@@ -1,6 +1,12 @@
 class DocumentsController < InheritedResources::Base
   before_filter :authenticate_user!, :except => [:index, :show]
   
+  def show
+    document = Document.find(params[:id])
+    render :status => 404 unless user_signed_in? || document.published
+    @document = document
+  end
+  
   protected
   
   def begin_of_association_chain

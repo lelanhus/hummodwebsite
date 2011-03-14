@@ -1,8 +1,9 @@
 - if target.errors.any?
-  .errorExplanation
-    %h2
-      = pluralize(target.errors.count, "error")
-      prohibited this record from being saved:
-    %ul
+  %section.errorExplanation
+    %header
+      %h1
+        = pluralize(target.errors.count, "error")
+        prohibited this record from being saved:
+    %ol
       - target.errors.full_messages.each do |msg|
         %li= msg

@@ -22,7 +22,7 @@ class SectionImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Process files as they are uploaded:
-  process :resize_to_limit => [200, 300]
+  process :resize_to_limit => [600, 600]
   #
   # def scale(width, height)
   #   # do something

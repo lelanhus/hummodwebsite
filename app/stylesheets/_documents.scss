@@ -1,0 +1,97 @@
+/* Layout */
+
+form#new_document {
+  @extend .column;
+  @extend .grid_8;
+  legend {
+    margin-left: 1em;
+    padding: 0.5em;
+  }
+  .field {
+    @extend .row;
+    padding-top: 1em;
+    label, input, select, textarea {
+      @extend .column;
+    }
+    input, textarea {
+      @extend .grid_7;
+    }
+    textarea {
+      height: 250px;
+    }
+  }
+}
+
+section#document {
+  @extend .column;
+  @extend .grid_8;
+  header.document {
+    display: none;
+  }
+}
+
+section.section {
+  margin-top: 1em;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    margin-bottom: 1em;
+    padding-top: 1em;
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+aside#doc_help {
+  @extend .column;
+  @extend .grid_4;
+  .content {
+    margin-left: 0.5em;
+  }
+}
+
+.sectionImage {
+  margin-top: 1em;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+/* Typography */
+
+
+aside#doc_help {
+  background: $light_grey;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+section.section {
+  header {
+    border-top: 1px solid $light_grey;
+    h1 {
+      text-decoration: underline;
+    }
+  }
+}
+form#new_document {
+  fieldset {
+    border-top: 1px solid $light_grey;
+  }
+  legend {
+    background: $logo_color;
+    font-size: 1.5em;
+  }
+  input, label, textarea {
+    font-size: 1.25em;
+  }
+  input, textarea {
+    padding: 0.25em;
+  }
+}

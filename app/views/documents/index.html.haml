@@ -3,6 +3,12 @@
   
 %ul
   - @documents.each do |doc|
-    %li
-      = link_to doc.title, doc
-  %li= link_to "New Document", new_document_path
+    %li= link_to doc.title, doc if doc.published?
+  
+- if user_signed_in?
+  %ul
+    Unpublished
+    - @documents.each do |doc|
+      %li= link_to doc.title, doc unless doc.published
+      %li= link_to "New Document", new_document_path if user_signed_in?
+    

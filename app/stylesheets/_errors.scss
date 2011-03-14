@@ -1,0 +1,29 @@
+.errorExplanation {
+  border: 2px solid red;
+  margin-bottom: 1em;
+  header {
+    background: red;
+    color: #fff;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    h1 {
+      margin: 0;
+    }
+  }
+  ol {
+    color: red;
+    font-size: 1.25em;
+    padding: 1em;
+    margin: 1em;
+    li {
+      list-style: decimal;
+    }
+  }
+}
+
+.field_with_errors {
+  color: red;
+  input, select, textarea {
+    border: 1px solid red;
+  }
+}

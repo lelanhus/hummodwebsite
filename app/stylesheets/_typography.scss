@@ -1,5 +1,13 @@
 /* Typography */
 
+$logo_color: #d2dfb3;
+$light_grey: #e5e5e5;
+$bar_color: #94aa62;
+
+#notice {
+  background: #CDFF82;
+}
+
 body {
   color: #666;
   font-family: Helvetica, Arial, san-serif;
@@ -9,8 +17,17 @@ a {
   color: #6295ec;
 }
 
+
+i {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
 #bar {
-  background: #94aa62;
+  background: $bar_color;
   height: 5px;
 }
 
@@ -20,7 +37,7 @@ a {
   h1 {
     text-align: center;
     a {
-      background: #d2dfb3;
+      background: $logo_color;
       color: #fff;
       display: block;
       font-weight: bold;
@@ -29,7 +46,7 @@ a {
   }
   nav {
     a {
-      color: #94aa62;
+      color: $bar_color;
       text-decoration: none;
     }
     a:hover {

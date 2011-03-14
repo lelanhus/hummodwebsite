@@ -4,7 +4,9 @@ class Document < ActiveRecord::Base
   
   has_many :sections, :dependent => :destroy
   
-  validates :title, :body, :user, :presence => true
+  validates :title, :body, :category, :user, :presence => true
   validates :title, :uniqueness => true
+  
+  scope :published, where(:published => true)
 
 end

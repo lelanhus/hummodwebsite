@@ -5,7 +5,9 @@ module DocumentsHelper
     link_to "Edit Document Body", edit_document_path(@document)
   end
   
-  def current_user_is_author?
-    current_user.id == @document.user_id
+  def coderay(text)  
+    text.gsub(/\<code( lang="(.+?)")?\>(.+?)\<\/code\>/m) do  
+      content_tag("notextile", CodeRay.scan($3, $2).div(:css => :class))  
+    end  
   end
 end

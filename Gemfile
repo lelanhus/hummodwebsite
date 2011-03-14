@@ -15,7 +15,7 @@ gem 'delayed_job'
 #gem 'rack-rewrite'
 gem 'RedCloth'
 gem 'rmagick'
-
+gem 'coderay'
 
 group :development do
   gem 'hpricot'

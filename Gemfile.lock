@@ -42,6 +42,7 @@ GEM
     builder (2.1.2)
     carrierwave (0.5.2)
       activesupport (~> 3.0)
+    coderay (0.9.7)
     daemons (1.1.0)
     delayed_job (2.1.4)
       activesupport (~> 3.0)
@@ -107,6 +108,7 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   carrierwave
+  coderay
   delayed_job
   devise
   haml
