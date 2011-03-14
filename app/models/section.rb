@@ -3,5 +3,5 @@ class Section < ActiveRecord::Base
   belongs_to :document
   
   validates :title, :body, :presence => true
-  validates :title, :uniqueness => { :scope => :document }
+  validates :title, :uniqueness => { :scope => :document_id }
 end

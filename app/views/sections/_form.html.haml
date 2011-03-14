@@ -1,0 +1,15 @@
+= form_for([@document, @section]) do |f|
+  = render 'shared/error_messages', :target => @section
+  
+  %fieldset
+    %legend Section Info
+    .field
+      = f.label :title
+      = f.text_field :title
+    
+    .field
+      = f.label :body
+      %br
+      = f.text_area :body
+    
+  %p= f.submit
