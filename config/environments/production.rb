@@ -46,10 +46,4 @@ Hummod::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-  
-  config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
-    r301 %r{.*}, 'http://hummod.org$&', :if => Proc.new {|rack_env|
-        rack_env['SERVER_NAME'] != 'hummod.org'
-      }
-  end
 end
