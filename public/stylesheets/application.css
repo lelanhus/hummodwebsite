@@ -285,6 +285,9 @@ form#new_document .field {
   form#new_document .field textarea {
     height: 250px; }
 
+section#document ul {
+  list-style-type: disc;
+  padding-left: 2em; }
 section#document header.document {
   display: none; }
 
