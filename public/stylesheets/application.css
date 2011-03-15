@@ -329,3 +329,9 @@ form#new_document input, form#new_document label, form#new_document textarea {
   font-size: 1.25em; }
 form#new_document input, form#new_document textarea {
   padding: 0.25em; }
+
+pre {
+  background: #a5a5a5;
+  font-family: "Terminal";
+  color: #e5e5e5;
+  padding: 0px; }
