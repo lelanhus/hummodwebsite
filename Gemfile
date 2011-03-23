@@ -14,7 +14,7 @@ gem 'delayed_job'
 #gem 'capistrano'
 #gem 'rack-rewrite'
 #gem 'RedCloth'
-#gem 'rmagick'
+gem 'rmagick'
 #gem 'coderay'
 
 #group :development do
