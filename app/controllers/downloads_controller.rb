@@ -4,9 +4,9 @@ class DownloadsController < InheritedResources::Base
   def package
     @download = Download.find(params[:id])
     if params[:modeler]
-      send_file("/downloads/HumMod.v.1.5 2.zip")
+      send_file("/public/downloads/HumMod.v.1.5 2.zip")
     else
-      send_file("/downloads/Model_Navigator.EXE.zip")
+      send_file("/public/downloads/Model_Navigator.EXE.zip")
     end
   end
   
