@@ -5,4 +5,7 @@
       %h2= download.category.name
     %p
     = download.description
-    = link_to "Download", package_download_path(download), :class => :download_link
+    - if download.category.name == "Modeler"
+      = link_to "Download", package_download_path(download, :modeler => true), :class => :download_link
+    - else
+      = link_to "Download", package_download_path(download), :class => :download_link
