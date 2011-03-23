@@ -2,4 +2,7 @@
 
 %p= @download.description
 
-= link_to "Download", package_download_path(@download), :class => :download_link
+- if download.category.name == "Modeler"
+  = link_to "Download", "../downloads/HumMod.v.1.5 2.zip", :class => :download_link
+- else
+  = link_to "Download", "../downloads/Model_Navigator.EXE.zip", :class => :download_link
