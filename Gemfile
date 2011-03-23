@@ -6,21 +6,21 @@ gem 'devise'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'inherited_resources'
 gem 'haml'
-gem 'haml-rails'
+#gem 'haml-rails'
 gem 'carrierwave'
 gem 'jquery-rails'
 gem 'mail_form'
 gem 'delayed_job'
 #gem 'capistrano'
 #gem 'rack-rewrite'
-gem 'RedCloth'
-gem 'rmagick'
-gem 'coderay'
+#gem 'RedCloth'
+#gem 'rmagick'
+#gem 'coderay'
 
-group :development do
-  gem 'hpricot'
-  gem 'ruby_parser'
-end
+#group :development do
+#  gem 'hpricot'
+#  gem 'ruby_parser'
+#end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
