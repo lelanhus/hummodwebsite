@@ -16,6 +16,7 @@ gem 'delayed_job'
 #gem 'RedCloth'
 gem 'rmagick'
 #gem 'coderay'
+gem 'delayed_job_admin'
 
 #group :development do
 #  gem 'hpricot'
